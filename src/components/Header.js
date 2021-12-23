@@ -11,7 +11,7 @@ export function Header(props) {
                 <Nav className="me-auto">
                     <Nav.Link><Link to="/">Home</Link></Nav.Link>
                     <Nav.Link><Link to="/projects">Projects</Link></Nav.Link>
-                    <Nav.Link><Link to="">Experience</Link></Nav.Link>
+                    <Nav.Link><Link to="/experience">Experience</Link></Nav.Link>
                 </Nav>
                 </Navbar.Collapse>
             </Container>

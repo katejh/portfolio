@@ -3,10 +3,18 @@
         "name": "Kate Huang",
         "first-name": "Kate",
         "last-name": "Huang",
-        "social": {
-            "github": "https://github.com/katejh",
-            "linkedin": "https://linkedin.com/in/katejh"
-        },
+        "socials": [
+            {
+                "type": "github",
+                "url": "https://github.com/katejh",
+                "class": ""
+            },
+            {
+                "type": "linkedin",
+                "url": "https://linkedin.com/in/katejh",
+                "class": ""
+            }
+        ],
         "description": "I'm Kate Huang, a student"
     },
     "skills": [
@@ -74,6 +82,33 @@
             "technologies": [],
             "brief": "",
             "description": ""
+        }
+    ],
+    "courses": [
+        {
+            "code": "CPSC 221",
+            "title": "Basic Algorithms and Data Structures",
+            "brief": ""
+        },
+        {
+            "code": "CPSC 213",
+            "title": "Introduction to Computer Systems",
+            "brief": ""
+        },
+        {
+            "code": "CPEN 221",
+            "title": "Software Construction I",
+            "brief": ""
+        },
+        {
+            "code": "ENPH 253",
+            "title": "Introduction to Instrument Design",
+            "brief": ""
+        },
+        {
+            "code": "ENPH 259",
+            "title": "Experimental Techniques",
+            "brief": ""
         }
     ]
 }

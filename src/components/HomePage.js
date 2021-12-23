@@ -3,18 +3,24 @@ import React from 'react';
 class HomePage extends React.Component {
     constructor(props) {
         super(props);
+        const data = this.props.data;
+
         this.state = {
-            resumeData: props.data
+            name: data.basic_info.name
         }
-        console.log(this.props.data);
-        console.log(this.state.resumeData);
+
+        // console.log(this.props.data);
     }
 
+    componentDidMount
+
     render() {
-        var name = this.state.resumeData.basic_info.name;
+        var name = this.state.name;
+
         return (
             <div className="home-page">
             Hello! I am {name}
+            <br/>
             <a href="resume.pdf" download>Resume download</a>
             </div>
         );

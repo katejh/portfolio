@@ -1,0 +1,79 @@
+{
+    "basic_info": {
+        "name": "Kate Huang",
+        "first-name": "Kate",
+        "last-name": "Huang",
+        "social": {
+            "github": "https://github.com/katejh",
+            "linkedin": "https://linkedin.com/in/katejh"
+        },
+        "description": "I'm Kate Huang, a student"
+    },
+    "skills": [
+        {
+            "skill": "Python",
+            "class": ""
+        }
+    ],
+    "projects": {
+        "name-and-shame": {
+            "name": "Name and Shame",
+            "brief": "",
+            "body": "",
+            "images": [],
+            "code-link": "",
+            "url": "",
+            "start-date": "2021-09",
+            "end-date": "2021-09",
+            "technologies": [
+                {
+                    "skill": "",
+                    "class": ""
+                }
+            ]
+        },
+        "enph253-robot": {
+            "name": "ENPH 253 Robot",
+            "brief": "",
+            "body": "",
+            "images": [],
+            "code-link": "",
+            "url": "",
+            "start-date": "2021-05",
+            "end-date": "2021-08",
+            "technologies": [
+                {
+                    "skill": "C++",
+                    "class": ""
+                }
+            ]
+        },
+        "blogmedia": {
+            "name": "Blogmedia",
+            "brief": "",
+            "body": "",
+            "images": [],
+            "code-link": "",
+            "url": "",
+            "start-date": "2021-04",
+            "end-date": "",
+            "technologies": [
+                {
+                    "skill": "",
+                    "class": ""
+                }
+            ]
+        }
+    },
+    "experience": [
+        {
+            "company": "",
+            "title": "",
+            "start-date": "",
+            "end-date": "",
+            "technologies": [],
+            "brief": "",
+            "description": ""
+        }
+    ]
+}

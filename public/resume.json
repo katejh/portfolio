@@ -19,7 +19,7 @@
     },
     "skills": [
         {
-            "skill": "Python",
+            "name": "Python",
             "class": ""
         }
     ],
@@ -31,11 +31,11 @@
             "images": [],
             "code-link": "",
             "url": "",
-            "start-date": "2021-09",
-            "end-date": "2021-09",
+            "start_date": "Sept 2021",
+            "end_date": "Sept 2021",
             "technologies": [
                 {
-                    "skill": "",
+                    "name": "",
                     "class": ""
                 }
             ]
@@ -47,11 +47,11 @@
             "images": [],
             "code-link": "",
             "url": "",
-            "start-date": "2021-05",
-            "end-date": "2021-08",
+            "start_date": "May 2021",
+            "end_date": "Aug 2021",
             "technologies": [
                 {
-                    "skill": "C++",
+                    "name": "C++",
                     "class": ""
                 }
             ]
@@ -63,11 +63,11 @@
             "images": [],
             "code-link": "",
             "url": "",
-            "start-date": "2021-04",
-            "end-date": "",
+            "start_date": "Apr 2021",
+            "end_date": "",
             "technologies": [
                 {
-                    "skill": "",
+                    "name": "",
                     "class": ""
                 }
             ]
@@ -75,11 +75,30 @@
     },
     "experience": [
         {
-            "company": "",
-            "title": "",
-            "start-date": "",
-            "end-date": "",
-            "technologies": [],
+            "company": "University of British Columbia",
+            "title": "Undergraduate Teaching Assistant - APSC 160",
+            "start_date": "Sept 2021",
+            "end_date": "Dec 2021",
+            "technologies": [
+                {
+                    "name": "C",
+                    "class": ""
+                }
+            ],
+            "brief": "Teaching assistant for intro to C course for engineering students",
+            "description": ""
+        },
+        {
+            "company": "Loblaw Digital",
+            "title": "Software Developer Co-op",
+            "start_date": "Jan 2021",
+            "end_date": "Apr 2021",
+            "technologies": [
+                {
+                    "name": "",
+                    "class": ""
+                }
+            ],
             "brief": "",
             "description": ""
         }

@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import HomePage from './components/HomePage';
 import { Header } from './components/Header';
 import NotFound404 from './components/NotFound404';
+import Experience from './components/Experience';
 
 class App extends React.Component {
   constructor(props) {
@@ -52,8 +53,8 @@ class App extends React.Component {
           <Header />
           <Switch>
             <Route path="/projects" />
-            <Route path="/experience" />
-            <Route exact path="/" render={() => <HomePage data={this.state.resumeData}></HomePage>} />
+            <Route path="/experience" render={() => <Experience experience={this.state.resumeData.experience} />}/>
+            <Route exact path="/" render={() => <HomePage data={this.state.resumeData} />} />
             <Route path="/" render={() => <NotFound404 />}></Route>
           </Switch>
         </Router>

@@ -6,13 +6,11 @@
         "socials": [
             {
                 "type": "github",
-                "url": "https://github.com/katejh",
-                "class": ""
+                "url": "https://github.com/katejh"
             },
             {
                 "type": "linkedin",
-                "url": "https://linkedin.com/in/katejh",
-                "class": ""
+                "url": "https://linkedin.com/in/katejh"
             }
         ],
         "description": "I'm Kate Huang, a student"
@@ -36,63 +34,65 @@
             "end_date": "Aug 2021",
             "gpa": "87.6",
             "gpa_4.33_scale": "4.1",
-            "brief": ""
+            "brief": "I was in Engineering Physics, an intensive program combining mechanical, electrical, and computer engineering, as well as math and physics. Though it was an enriching experience, I eventually decided that software was my passion and transferred to Computer Science."
         }
     ],
-    "skills": [
-        {
-            "name": "Python",
-            "class": ""
-        }
-    ],
+    "skills": [],
     "projects": {
         "name-and-shame": {
             "name": "Name and Shame",
-            "brief": "",
+            "brief": "Hackathon project for Hack the North 2021",
             "body": "",
             "images": [],
             "code-link": "",
             "url": "",
             "start_date": "Sept 2021",
             "end_date": "Sept 2021",
-            "technologies": [
-                {
-                    "name": "",
-                    "class": ""
-                }
-            ]
+            "technologies": ["JavaScript", "React", "MongoDB", "Express", "Node", "Docker"]
         },
         "enph253-robot": {
             "name": "ENPH 253 Robot",
-            "brief": "",
+            "brief": "Project made for ENPH 253, the robot competition course in Engineering Physics",
             "body": "",
             "images": [],
             "code-link": "",
             "url": "",
             "start_date": "May 2021",
             "end_date": "Aug 2021",
-            "technologies": [
-                {
-                    "name": "C++",
-                    "class": ""
-                }
-            ]
+            "technologies": ["C++", "BluePill STM32", "Arduino"]
         },
         "blogmedia": {
             "name": "Blogmedia",
-            "brief": "",
+            "brief": "Personal project I work on occasionally to learn React, Django, and Docker",
             "body": "",
             "images": [],
             "code-link": "",
             "url": "",
             "start_date": "Apr 2021",
             "end_date": "",
-            "technologies": [
-                {
-                    "name": "",
-                    "class": ""
-                }
-            ]
+            "technologies": ["Python", "JavaScript", "Django", "React", "PostgreSQL", "Docker"]
+        },
+        "women-in-stem": {
+            "name": "Women In Stem",
+            "brief": "Hackathon project for cmd-f 2021",
+            "body": "",
+            "images": [],
+            "code-link": "",
+            "url": "",
+            "start_date": "",
+            "end_date": "",
+            "technologies": ["Python", "JavaScript", "Flask", "React", "Firebase"]
+        },
+        "save-e": {
+            "name": "SaveE",
+            "brief": "Hackathon project for cmd-f 2020",
+            "body": "",
+            "images": [],
+            "code-link": "",
+            "url": "",
+            "start_date": "",
+            "end_date": "",
+            "technologies": ["Python", "Django", "HTML"]
         }
     },
     "experience": [
@@ -101,51 +101,44 @@
             "title": "Undergraduate Teaching Assistant - APSC 160",
             "start_date": "Sept 2021",
             "end_date": "Dec 2021",
-            "technologies": [
-                {
-                    "name": "C",
-                    "class": ""
-                }
-            ],
+            "technologies": ["C"],
             "brief": "Teaching assistant for intro to C course for engineering students",
-            "description": "yes"
+            "description": ""
         },
         {
             "company": "Loblaw Digital",
             "title": "Software Developer Co-op",
             "start_date": "Jan 2021",
             "end_date": "Apr 2021",
-            "technologies": [
-                {
-                    "name": "PHP",
-                    "class": ""
-                },
-                {
-                    "name": "JavaScript",
-                    "class": ""
-                },
-                {
-                    "name": "jQuery",
-                    "class": ""
-                },
-                {
-                    "name": "MySQL",
-                    "class": ""
-                },
-                {
-                    "name": "Docker",
-                    "class": ""
-                },
-                {
-                    "name": "Google Cloud Platform",
-                    "class": ""
-                },
-                {
-                    "name": "Git",
-                    "class": ""
-                }
-            ],
+            "technologies": ["PHP", "JavaScript", "Zend", "jQuery", "MySQL", "Docker", "Google Cloud Platform", "Git"],
             "brief": "Software development intern for Loblaw Marketplace",
+            "description": "Seller Portal team"
+        },
+        {
+            "company": "University of British Columbia",
+            "title": "Undergraduate Teaching Assistant - MATH 100",
+            "start_date": "Sept 2020",
+            "end_date": "Dec 2020",
+            "technologies": [],
+            "brief": "Workshop assistant for Calculus I",
+            "description": ""
+        },
+        {
+            "company": "Unmanned Aircraft Systems",
+            "title": "Software Team Member",
+            "start_date": "Sept 2020",
+            "end_date": "Dec 2020",
+            "technologies": ["Python", "JavaScript", "React", "Git", "Docker"],
+            "brief": "",
+            "description": ""
+        },
+        {
+            "company": "Snowbots",
+            "title": "Software Team Member",
+            "start_date": "Sept 2019",
+            "end_date": "Apr 2020",
+            "technologies": ["C++", "ROS"],
+            "brief": "",
             "description": ""
         }
     ],
@@ -153,27 +146,27 @@
         {
             "code": "CPSC 221",
             "title": "Basic Algorithms and Data Structures",
-            "brief": ""
+            "brief": "Design and analysis of algorithms and data structures"
         },
         {
             "code": "CPSC 213",
             "title": "Introduction to Computer Systems",
-            "brief": ""
+            "brief": "Assembly, memory, control flows, procedures and stack, I/O devices, asynchrony, synchronization"
         },
         {
             "code": "CPEN 221",
             "title": "Software Construction I",
-            "brief": ""
+            "brief": "An introduction to practices in software engineering. OOP, unit testing, abstraction and specifications"
         },
         {
             "code": "ENPH 253",
             "title": "Introduction to Instrument Design",
-            "brief": ""
+            "brief": "Engineering Physics's summer robot competition for second years"
         },
         {
             "code": "ENPH 259",
             "title": "Experimental Techniques",
-            "brief": ""
+            "brief": "Lab course learning how to construct electrical circuits. Analog-digital conversion, op-amps"
         }
     ]
 }

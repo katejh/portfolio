@@ -32,7 +32,7 @@ class Header extends React.Component {
             <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static" enableColorOnDark color="primary">
                 <Toolbar>
-                    <Typography variant="h5" component="div" sx={{ flexGrow: 1 }} style={{"text-align": "left"}}>
+                    <Typography variant="h5" component="div" sx={{ flexGrow: 1 }} style={{textAlign: "left"}}>
                         <Link to="/" style={linkStyle}>
                             {this.state.name}
                         </Link>

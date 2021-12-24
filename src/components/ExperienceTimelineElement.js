@@ -31,7 +31,7 @@ class ExperienceTimelineElement extends React.Component {
         var tech = this.state.technologies.map((skill, i) => {
             return (
                 <Chip 
-                  label={skill.name}
+                  label={skill}
                   key={i}
                   color='secondary'
                   size="small"

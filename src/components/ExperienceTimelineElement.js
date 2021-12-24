@@ -1,10 +1,9 @@
 import React from 'react';
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
-import { Badge, Collapse } from 'react-bootstrap';
+import { Collapse, Chip } from '@mui/material';
 
 // stylesheets
 import 'react-vertical-timeline-component/style.min.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 class ExperienceTimelineElement extends React.Component {
     constructor(props) {
@@ -27,9 +26,10 @@ class ExperienceTimelineElement extends React.Component {
     render() {
         var tech = this.state.technologies.map((skill, i) => {
             return (
-                <Badge pill className="m3 bg-secondary" key={i}>
-                    {skill.name}
-                </Badge>
+                <Chip
+                  size="small"
+                  label={skill.name}
+                />
             );
         });
         var timeline_date_string = this.state.start_date + " - " + (this.state.end_date ? this.state.end_date : "Current");

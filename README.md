@@ -3,7 +3,6 @@ Live [here]()
 
 ## Technologies
 React
-React Bootstrap
 
 ## Credits
 [Devicon](https://devicon.dev/)

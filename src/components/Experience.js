@@ -1,6 +1,5 @@
 import React from 'react';
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import { Badge, Collapse } from 'react-bootstrap';
+import { VerticalTimeline } from 'react-vertical-timeline-component';
 import ExperienceTimelineElement from './ExperienceTimelineElement';
 
 import 'react-vertical-timeline-component/style.min.css';

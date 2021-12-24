@@ -17,6 +17,18 @@
         ],
         "description": "I'm Kate Huang, a student"
     },
+    "education": [
+        {
+            "school": "",
+            "degree": "",
+            "major": "",
+            "start_date": "",
+            "end_date": "",
+            "gpa": "",
+            "gpa_4.33_scale": "",
+            "brief": ""
+        }
+    ],
     "skills": [
         {
             "name": "Python",
@@ -95,11 +107,35 @@
             "end_date": "Apr 2021",
             "technologies": [
                 {
-                    "name": "",
+                    "name": "PHP",
+                    "class": ""
+                },
+                {
+                    "name": "JavaScript",
+                    "class": ""
+                },
+                {
+                    "name": "jQuery",
+                    "class": ""
+                },
+                {
+                    "name": "MySQL",
+                    "class": ""
+                },
+                {
+                    "name": "Docker",
+                    "class": ""
+                },
+                {
+                    "name": "Google Cloud Platform",
+                    "class": ""
+                },
+                {
+                    "name": "Git",
                     "class": ""
                 }
             ],
-            "brief": "",
+            "brief": "Software development intern for Loblaw Marketplace",
             "description": ""
         }
     ],

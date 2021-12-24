@@ -1,12 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 // import components
 import HomePage from './components/HomePage';
-import { Header } from './components/Header';
+import Header from './components/Header';
 import NotFound404 from './components/NotFound404';
 import Experience from './components/Experience';
 
@@ -50,7 +49,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Router>
-          <Header />
+          <Header name={this.state.resumeData.basic_info.name}/>
           <Switch>
             <Route path="/projects" />
             <Route path="/experience" render={() => <Experience experience={this.state.resumeData.experience} />}/>

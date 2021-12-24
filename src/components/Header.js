@@ -24,14 +24,15 @@ class Header extends React.Component {
 
     render() {
         const linkStyle = {
-            color: "#FFF"
+            color: "#FFF",
+            textDecoration: 'none'
         }
 
         return (
             <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static">
                 <Toolbar>
-                    <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
+                    <Typography variant="h5" component="div" sx={{ flexGrow: 1 }} style={{"text-align": "left"}}>
                         <Link to="/" style={linkStyle}>
                             {this.state.name}
                         </Link>

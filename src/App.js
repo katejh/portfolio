@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
 
 // import components
 import HomePage from './components/HomePage';
@@ -40,13 +42,22 @@ class App extends React.Component {
   }
 
   render() {
+    const darkTheme = createTheme({
+      palette: {
+        mode: 'dark'
+      }
+    });
+
     //console.log(this.state.resumeData);
     if (!this.state.loaded) {
       return (
         <div className="App" />
       );
     }
+
+    // add <CssBaseline /> as child of ThemeProvider if dark background desired
     return (
+      <ThemeProvider theme={darkTheme}>
       <div className="App">
         <Router>
           <Header name={this.state.resumeData.basic_info.name}/>
@@ -58,6 +69,7 @@ class App extends React.Component {
           </Switch>
         </Router>
       </div>
+      </ThemeProvider>
     );
   }
 }

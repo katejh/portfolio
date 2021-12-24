@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { ThemeProvider, createTheme, StyledEngineProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
 // import components
@@ -42,9 +42,19 @@ class App extends React.Component {
   }
 
   render() {
-    const darkTheme = createTheme({
+    const theme = createTheme({
       palette: {
-        mode: 'dark'
+        mode: 'dark',
+        primary: {
+          main: '#5e5555',
+        },
+        secondary: {
+          main: '#78909c',
+        },
+        background: {
+          paper: '#aaaaaa',
+          default: '#eeeeee',
+        },
       }
     });
 
@@ -57,7 +67,9 @@ class App extends React.Component {
 
     // add <CssBaseline /> as child of ThemeProvider if dark background desired
     return (
-      <ThemeProvider theme={darkTheme}>
+      <StyledEngineProvider injectFirst>
+      <ThemeProvider theme={theme}>
+      <CssBaseline />
       <div className="App">
         <Router>
           <Header name={this.state.resumeData.basic_info.name}/>
@@ -70,6 +82,7 @@ class App extends React.Component {
         </Router>
       </div>
       </ThemeProvider>
+      </StyledEngineProvider>
     );
   }
 }

@@ -16,7 +16,7 @@ class Experience extends React.Component {
     render() {
         var jobs = this.state.experience.map((job, i) => {
            return (
-            <ExperienceTimelineElement job={job}/>
+            <ExperienceTimelineElement job={job} key={i}/>
            );
         });
 

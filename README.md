@@ -1,13 +1,18 @@
 # Kate's Portfolio
-Live [here]()
+Currently in progress!
 
-## Technologies
-React
-Material UI
+## Built With
+- [React](https://reactjs.org/)
+- [Material UI](https://mui.com/)
+- [react-vertical-timeline](https://github.com/stephane-monnot/react-vertical-timeline)
 
-## Credits
+## Special Thanks
+Resources and inspiration that I used while making this project.
+
 [Devicon](https://devicon.dev/)
+
 [Dorota1997's portfolio template](https://github.com/Dorota1997/react-frontend-dev-portfolio)
+
 [mui-theme-creator](https://bareynol.github.io/mui-theme-creator/)
 
 ## Author

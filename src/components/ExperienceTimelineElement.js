@@ -1,8 +1,9 @@
 import React from 'react';
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
-import { Collapse, Chip, Paper, Divider } from '@mui/material';
+import { Collapse, Chip, Paper, Divider, Typography } from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import WorkIcon from '@mui/icons-material/Work';
 
 // stylesheets
@@ -35,6 +36,7 @@ class ExperienceTimelineElement extends React.Component {
                   key={i}
                   color='secondary'
                   size="small"
+                  sx={{mr: 1}}
                 />
             );
         });
@@ -43,9 +45,13 @@ class ExperienceTimelineElement extends React.Component {
         var description_collapsible = this.state.description ?
         <div>
             <Divider sx={{mt: 2, borderBottomWidth: 2, backgroundColor: "#aaaaaa"}} light={false} color="secondary"/>
-            <ExpandMoreIcon sx={{fill: "#aaaaaa", m: -1}}/>
+            <div style={{textAlign: "center", color: "#aaaaaa", marginTop: 1}}>
+                {this.state.open ? <ExpandLessIcon /> :<ExpandMoreIcon />}
+            </div>
             <Collapse in={this.state.open}>
-                <p>{this.state.description}</p>
+                <Typography variant="p">
+                    {this.state.description}
+                </Typography>
             </Collapse>
         </div> 
         : null;
@@ -60,7 +66,7 @@ class ExperienceTimelineElement extends React.Component {
                         mode: 'light',
                         text: {
                             ...theme.palette.text,
-                            primary: "#000000"
+                            // primary: "#000000"
                         },
                         background: {
                             ...theme.palette.background,
@@ -75,7 +81,6 @@ class ExperienceTimelineElement extends React.Component {
             <VerticalTimelineElement
               className = "vertical-timeline-element--work"
               date={timeline_date_string}
-              contentStyle={{color: '#000000'}}
               iconStyle={{background: 'linear-gradient(45deg, #d53369 0%, #e8c85c 100%)'}}
               icon={<WorkIcon />}
               key={this.state.key}
@@ -85,14 +90,16 @@ class ExperienceTimelineElement extends React.Component {
                   onClick={() => {this.setState({open: !this.state.open})}}
                   style={{cursor: 'pointer'}}
                 >
-                    <h3 className="vertical-timeline-element-title" color="">
+                    <Typography variant="h5" className="vertical-timeline-element-title" color="primary.dark">
                         {this.state.company}
-                    </h3>
-                    <h4 className="vertical-timeline-element-subtitle">
+                    </Typography>
+                    <Typography variant="h6" className="vertical-timeline-element-subtitle" color="primary">
                         {this.state.title}
-                    </h4>
-                    <div>{tech}</div>
-                    <p>{this.state.brief}</p>
+                    </Typography>
+                    <div style={{marginTop: 2, marginBottom: 8}}>{tech}</div>
+                    <Typography variant="p" color="text.secondary">
+                        {this.state.brief}
+                    </Typography>
                     {description_collapsible}
                 </Paper>
             </VerticalTimelineElement>

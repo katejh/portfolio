@@ -30,7 +30,7 @@ class Header extends React.Component {
 
         return (
             <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="static" enableColorOnDark color="primary">
+            <AppBar position="sticky" enableColorOnDark color="primary">
                 <Toolbar>
                     <Typography variant="h5" component="div" sx={{ flexGrow: 1 }} style={{textAlign: "left"}}>
                         <Link to="/" style={linkStyle}>
@@ -59,9 +59,15 @@ class Header extends React.Component {
                       role="presentation"
                     >
                     <List>
-                        <MenuItem component={Link} to="/" onClick={this.closeDrawer}>Home</MenuItem>
-                        <MenuItem component={Link} to="/projects" onClick={this.closeDrawer}>Projects</MenuItem>
-                        <MenuItem component={Link} to="/experience" onClick={this.closeDrawer}>Experience</MenuItem>
+                        <MenuItem component={Link} to="/" onClick={this.closeDrawer}>
+                            <Typography color="primary.dark">Home</Typography>
+                        </MenuItem>
+                        <MenuItem component={Link} to="/projects" onClick={this.closeDrawer}>
+                            <Typography color="primary.dark">Projects</Typography>
+                        </MenuItem>
+                        <MenuItem component={Link} to="/experience" onClick={this.closeDrawer}>
+                            <Typography color="primary.dark">Experience</Typography>
+                        </MenuItem>
                     </List>
                     </Box>
                 </Drawer>

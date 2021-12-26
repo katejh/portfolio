@@ -37,9 +37,9 @@
             "brief": "I was in Engineering Physics, an intensive program combining mechanical, electrical, and computer engineering, as well as math and physics. Though it was an enriching experience, I eventually decided that software was my passion and transferred to Computer Science."
         }
     ],
-    "skills": [],
-    "projects": {
-        "name-and-shame": {
+    "skills": ["Python", "JavaScript", "Java"],
+    "projects": [
+        {
             "name": "Name and Shame",
             "brief": "Hackathon project for Hack the North 2021",
             "body": "",
@@ -50,7 +50,7 @@
             "end_date": "Sept 2021",
             "technologies": ["JavaScript", "React", "MongoDB", "Express", "Node", "Docker"]
         },
-        "enph253-robot": {
+        {
             "name": "ENPH 253 Robot",
             "brief": "Project made for ENPH 253, the robot competition course in Engineering Physics",
             "body": "",
@@ -61,7 +61,7 @@
             "end_date": "Aug 2021",
             "technologies": ["C++", "BluePill STM32", "Arduino"]
         },
-        "blogmedia": {
+        {
             "name": "Blogmedia",
             "brief": "Personal project I work on occasionally to learn React, Django, and Docker",
             "body": "",
@@ -72,7 +72,7 @@
             "end_date": "",
             "technologies": ["Python", "JavaScript", "Django", "React", "PostgreSQL", "Docker"]
         },
-        "women-in-stem": {
+        {
             "name": "Women In Stem",
             "brief": "Hackathon project for cmd-f 2021",
             "body": "",
@@ -83,7 +83,7 @@
             "end_date": "",
             "technologies": ["Python", "JavaScript", "Flask", "React", "Firebase"]
         },
-        "save-e": {
+        {
             "name": "SaveE",
             "brief": "Hackathon project for cmd-f 2020",
             "body": "",
@@ -94,54 +94,57 @@
             "end_date": "",
             "technologies": ["Python", "Django", "HTML"]
         }
-    },
-    "experience": [
-        {
-            "company": "University of British Columbia",
-            "title": "Undergraduate Teaching Assistant - APSC 160",
-            "start_date": "Sept 2021",
-            "end_date": "Dec 2021",
-            "technologies": ["C"],
-            "brief": "Teaching assistant for intro to C course for engineering students",
-            "description": ""
-        },
-        {
-            "company": "Loblaw Digital",
-            "title": "Software Developer Co-op",
-            "start_date": "Jan 2021",
-            "end_date": "Apr 2021",
-            "technologies": ["PHP", "JavaScript", "Zend", "jQuery", "MySQL", "Docker", "Google Cloud Platform", "Git"],
-            "brief": "Software development intern for Loblaw Marketplace",
-            "description": "Seller Portal team"
-        },
-        {
-            "company": "University of British Columbia",
-            "title": "Undergraduate Teaching Assistant - MATH 100",
-            "start_date": "Sept 2020",
-            "end_date": "Dec 2020",
-            "technologies": [],
-            "brief": "Workshop assistant for Calculus I",
-            "description": ""
-        },
-        {
-            "company": "Unmanned Aircraft Systems",
-            "title": "Software Team Member",
-            "start_date": "Sept 2020",
-            "end_date": "Dec 2020",
-            "technologies": ["Python", "JavaScript", "React", "Git", "Docker"],
-            "brief": "",
-            "description": ""
-        },
-        {
-            "company": "Snowbots",
-            "title": "Software Team Member",
-            "start_date": "Sept 2019",
-            "end_date": "Apr 2020",
-            "technologies": ["C++", "ROS"],
-            "brief": "",
-            "description": ""
-        }
     ],
+    "experience": {
+        "summary": "",
+        "jobs": [
+            {
+                "company": "University of British Columbia",
+                "title": "Undergraduate Teaching Assistant - APSC 160",
+                "start_date": "Sept 2021",
+                "end_date": "Dec 2021",
+                "technologies": ["C"],
+                "brief": "Teaching assistant for intro to C course for engineering students",
+                "description": ""
+            },
+            {
+                "company": "Loblaw Digital",
+                "title": "Software Developer Co-op",
+                "start_date": "Jan 2021",
+                "end_date": "Apr 2021",
+                "technologies": ["PHP", "JavaScript", "Zend", "jQuery", "MySQL", "Docker", "Google Cloud Platform", "Git"],
+                "brief": "Software development intern for Loblaw Marketplace",
+                "description": "Seller Portal team"
+            },
+            {
+                "company": "University of British Columbia",
+                "title": "Undergraduate Teaching Assistant - MATH 100",
+                "start_date": "Sept 2020",
+                "end_date": "Dec 2020",
+                "technologies": [],
+                "brief": "Workshop assistant for Calculus I",
+                "description": ""
+            },
+            {
+                "company": "Unmanned Aircraft Systems",
+                "title": "Software Team Member",
+                "start_date": "Sept 2020",
+                "end_date": "Dec 2020",
+                "technologies": ["Python", "JavaScript", "React", "Git", "Docker"],
+                "brief": "",
+                "description": ""
+            },
+            {
+                "company": "Snowbots",
+                "title": "Software Team Member",
+                "start_date": "Sept 2019",
+                "end_date": "Apr 2020",
+                "technologies": ["C++", "ROS"],
+                "brief": "",
+                "description": ""
+            }
+        ]
+    },
     "courses": [
         {
             "code": "CPSC 221",

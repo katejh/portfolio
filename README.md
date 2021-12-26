@@ -9,11 +9,13 @@ Currently in progress!
 ## Special Thanks
 Resources and inspiration that I used while making this project.
 
-[Devicon](https://devicon.dev/)
-
 [Dorota1997's portfolio template](https://github.com/Dorota1997/react-frontend-dev-portfolio)
 
 [mui-theme-creator](https://bareynol.github.io/mui-theme-creator/)
+
+[Devicon](https://devicon.com)
+
+[FontAwesome](https://fontawesome.com/)
 
 ## Author
 Kate Huang

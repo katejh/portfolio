@@ -75,7 +75,7 @@ class App extends React.Component {
           <Switch>
             <Route path="/projects" />
             <Route path="/experience" render={() => <Experience experience={this.state.resumeData.experience} />}/>
-            <Route exact path="/" render={() => <HomePage data={this.state.resumeData} />} />
+            <Route exact path="/" render={() => <HomePage data={this.state.resumeData.basic_info} education={this.state.resumeData.education}/>} />
             <Route path="/" render={() => <NotFound404 />}></Route>
           </Switch>
         </Router>

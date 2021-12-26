@@ -9,7 +9,9 @@ class HomePage extends React.Component {
         const data = this.props.data;
 
         this.state = {
-            name: data.basic_info.name
+            name: data.name,
+            titles: data.titles,
+            education: props.education
         }
 
         // console.log(this.props.data);
@@ -17,17 +19,24 @@ class HomePage extends React.Component {
 
     render() {
         var greeting = "Hello! I am " + this.state.name;
+        var titles = this.state.titles.map((title, i) => {
+            return [title, 1500]
+        }).flat();
 
         return (
             <div>
-                <Paper elevation={0} style={{height: window.innerHeight, alignContent: 'center', justifyContent: 'center', alignItems: 'center', textAlign: 'center', position: 'relative'}}>
-                    <div style={{display: 'flex', alignContent: 'center', justifyContent: 'center', textAlign: 'center', position: 'relative', top: '50%', transform: 'translateY(-50%'}}>
-                        <Typography variant="h3">
-                            <Typical steps={[greeting]} wrapper="p"/>
-                        </Typography>
+                <Paper elevation={0} sx={{height: window.innerHeight, alignContent: 'center', justifyContent: 'center', alignItems: 'center', textAlign: 'center', position: 'relative'}}>
+                    <div style={{display: 'flex', alignContent: 'center', justifyContent: 'center', textAlign: 'center', position: 'relative', top: '50%', transform: 'translateY(-50%)'}}>
+                        <div>
+                            <Typography color="primary.dark" variant="h3" style={{align: 'column'}}>
+                                <Typical steps={[greeting]} />
+                            </Typography>
+                            <Typography color="primary.light" variant="h4" sx={{marginTop: -2}}>
+                                <Typical steps={titles} loop={Infinity}/>
+                            </Typography>
+                        </div>
                     </div>
-                    <div style={{flexGrow: 1}}></div>
-                    <div style={{position: 'absolute', bottom: 4, left: '50%'}}>
+                    <div style={{display: 'flex', position: 'absolute', left: '50%', transform: 'translateX(-50%)', bottom: 20}}>
                         <ExpandMoreIcon fontSize="large"/>
                     </div>
                 </Paper>

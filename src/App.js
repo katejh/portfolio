@@ -44,7 +44,6 @@ class App extends React.Component {
   render() {
     const theme = createTheme({
       palette: {
-        mode: 'dark',
         primary: {
           main: '#5e5555',
         },
@@ -52,7 +51,7 @@ class App extends React.Component {
           main: '#78909c',
         },
         background: {
-          paper: '#aaaaaa',
+          paper: '#bdbdbd',
           default: '#eeeeee',
         },
       }

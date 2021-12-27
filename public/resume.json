@@ -24,7 +24,7 @@
             "start_date": "Sept 2021",
             "end_date": "May 2024",
             "gpa": "",
-            "gpa_4.33_scale": "",
+            "gpa_4_33_scale": "",
             "brief": ""
         },
         {
@@ -34,7 +34,7 @@
             "start_date": "Sept 2019",
             "end_date": "Aug 2021",
             "gpa": "87.6",
-            "gpa_4.33_scale": "4.1",
+            "gpa_4_33_scale": "4.1",
             "brief": "I was in Engineering Physics, an intensive program combining mechanical, electrical, and computer engineering, as well as math and physics. Though it was an enriching experience, I eventually decided that software was my passion and transferred to Computer Science."
         }
     ],
@@ -99,6 +99,15 @@
     "experience": {
         "summary": "",
         "jobs": [
+            {
+                "company": "Twitter",
+                "title": "(Incoming) Software Engineer Intern",
+                "start_date": "May 2022",
+                "end_date": "Aug 2022",
+                "technologies": [],
+                "brief": "I'll be joining Twitter as an intern this summer!",
+                "description": ""
+            },
             {
                 "company": "University of British Columbia",
                 "title": "Undergraduate Teaching Assistant - APSC 160",

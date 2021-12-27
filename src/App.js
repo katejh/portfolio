@@ -45,13 +45,13 @@ class App extends React.Component {
     const theme = createTheme({
       palette: {
         primary: {
-          main: '#5e5555',
+          main: '#b71c1c',
         },
         secondary: {
           main: '#78909c',
         },
         background: {
-          paper: '#bdbdbd',
+          paper: '#e0e0e0',
           default: '#eeeeee',
         },
       }

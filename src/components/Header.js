@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { AppBar, Toolbar, IconButton, Box, Drawer, List, MenuItem } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import Typography from '@mui/material/Typography';
+import { styled } from '@mui/material/styles';
 
 class Header extends React.Component {
     constructor(props) {
@@ -23,24 +24,24 @@ class Header extends React.Component {
     }
 
     render() {
-        const linkStyle = {
-            color: "#FFF",
+        const StyledHeaderLink = styled(Link)(({theme}) => ({
+            color: theme.palette.primary.main,
             textDecoration: 'none'
-        }
+        }));
 
         return (
             <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="sticky" enableColorOnDark color="primary">
+            <AppBar position="sticky" sx={{background: "#ffffff"}}>
                 <Toolbar>
-                    <Typography variant="h5" component="div" sx={{ flexGrow: 1 }} style={{textAlign: "left"}}>
-                        <Link to="/" style={linkStyle}>
+                    <Typography variant="h5" component="div" color='primary' sx={{ flexGrow: 1, textAlign: 'left' }}>
+                        <StyledHeaderLink to="/">
                             {this.state.name}
-                        </Link>
+                        </StyledHeaderLink>
                     </Typography>
                     <IconButton
                       size="large"
                       edge="start"
-                      color="inherit"
+                      color="primary"
                       aria-label="menu"
                       sx={{ mr: 2 }}
                       onClick={this.toggleDrawer}
@@ -60,13 +61,13 @@ class Header extends React.Component {
                     >
                     <List>
                         <MenuItem component={Link} to="/" onClick={this.closeDrawer}>
-                            <Typography color="primary.dark">Home</Typography>
+                            <Typography>Home</Typography>
                         </MenuItem>
                         <MenuItem component={Link} to="/projects" onClick={this.closeDrawer}>
-                            <Typography color="primary.dark">Projects</Typography>
+                            <Typography>Projects</Typography>
                         </MenuItem>
                         <MenuItem component={Link} to="/experience" onClick={this.closeDrawer}>
-                            <Typography color="primary.dark">Experience</Typography>
+                            <Typography>Experience</Typography>
                         </MenuItem>
                     </List>
                     </Box>

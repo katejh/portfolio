@@ -30,8 +30,9 @@ function Projects(props) {
                       projects={props.projects} 
                       cardProps={{
                         sx: {
-                          maxWidth: 250
-                        }
+                          maxWidth: 250,
+                          cursor: 'pointer'
+                        },
                       }}
                       gridProps={{
                         container: true,

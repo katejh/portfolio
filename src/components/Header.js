@@ -31,9 +31,20 @@ class Header extends React.Component {
 
         return (
             <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="sticky" sx={{background: "#ffffff"}}>
+            <AppBar 
+              position="sticky" 
+              sx={{background: "#ffffff"}}
+            >
                 <Toolbar>
-                    <Typography variant="h5" component="div" color='primary' sx={{ flexGrow: 1, textAlign: 'left' }}>
+                    <Typography 
+                      variant="h5" 
+                      component="div" 
+                      color='primary' 
+                      sx={{ 
+                        flexGrow: 1, 
+                        textAlign: 'left' 
+                      }}
+                    >
                         <StyledHeaderLink to="/">
                             {this.state.name}
                         </StyledHeaderLink>
@@ -60,13 +71,25 @@ class Header extends React.Component {
                       role="presentation"
                     >
                     <List>
-                        <MenuItem component={Link} to="/" onClick={this.closeDrawer}>
+                        <MenuItem 
+                          component={Link} 
+                          to="/" 
+                          onClick={this.closeDrawer}
+                        >
                             <Typography>Home</Typography>
                         </MenuItem>
-                        <MenuItem component={Link} to="/projects" onClick={this.closeDrawer}>
+                        <MenuItem 
+                          component={Link} 
+                          to="/projects" 
+                          onClick={this.closeDrawer}
+                        >
                             <Typography>Projects</Typography>
                         </MenuItem>
-                        <MenuItem component={Link} to="/experience" onClick={this.closeDrawer}>
+                        <MenuItem 
+                          component={Link} 
+                          to="/experience" 
+                          onClick={this.closeDrawer}
+                        >
                             <Typography>Experience</Typography>
                         </MenuItem>
                     </List>

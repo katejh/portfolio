@@ -54,25 +54,39 @@ class Education extends React.Component {
                 >
                 <VerticalTimelineElement
                   className="vertical-time-element--education"
-                  iconStyle={{background: 'linear-gradient(45deg, #1CB5E0 0%, #000851 100%)'}}
+                  iconStyle={{
+                    background: 'linear-gradient(45deg, #1CB5E0 0%, #000851 100%)'
+                  }}
                   icon={<SchoolIcon sx={{fill: '#ffffff'}}/>}
                   key={i}
                   date={date_string}
                 >
                     <Paper elevation={0}>
-                        <Typography variant="h5" className="vertical-timeline-element-title">
+                        <Typography 
+                          variant="h5" 
+                          className="vertical-timeline-element-title"
+                        >
                             {ed.school}
                         </Typography>
-                        <Typography variant="h6" className="vertical-timeline-element-subtitle" color="primary.dark">
+                        <Typography 
+                          variant="h6" 
+                          className="vertical-timeline-element-subtitle" 
+                          color="primary.dark"
+                        >
                             {ed.degree + (ed.major ? ", " + ed.major : "")}
                         </Typography>
                         <div>
-                        <Typography variant="p" color="text.secondary">
+                        <Typography 
+                          variant="p" 
+                          color="text.secondary"
+                        >
                             {gpa_string}
                         </Typography>
                         </div>
                         <div>
-                        <Typography variant="p">
+                        <Typography 
+                          variant="p"
+                        >
                             {ed.brief}
                         </Typography>
                         </div>
@@ -83,14 +97,35 @@ class Education extends React.Component {
         });
         return (
             <div>
-                <div style={{display: 'flex', alignContent: 'center', justifyContent: 'center', textAlign: 'center'}}>
+                <div 
+                  style={{
+                    display: 'flex', 
+                    alignContent: 'center', 
+                    justifyContent: 'center', 
+                    textAlign: 'center'
+                  }}
+                >
                     <Typography variant="h4">Education</Typography>
                 </div>
-                <Box sx={{mt: 4, width: "75%", display: 'flex'}}>
-                    <VerticalTimeline layout='1-column-left'>
-                        {educations}
-                    </VerticalTimeline>
-                </Box>
+                <div 
+                  style={{
+                    display: 'flex', 
+                    alignContent: 'center', 
+                    justifyContent: 'center'
+                  }}
+                >
+                    <Box 
+                    sx={{
+                        mt: 4,
+                        width: '75%',
+                        display: 'flex',
+                    }}
+                    >
+                        <VerticalTimeline layout='1-column-left'>
+                            {educations}
+                        </VerticalTimeline>
+                    </Box>
+                </div>
                 
             </div>
         );

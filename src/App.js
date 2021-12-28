@@ -10,6 +10,7 @@ import HomePage from './components/HomePage';
 import Header from './components/Header';
 import NotFound404 from './components/NotFound404';
 import Experience from './components/Experience';
+import Projects from './components/Projects';
 
 class App extends React.Component {
   constructor(props) {
@@ -73,7 +74,7 @@ class App extends React.Component {
         <Router>
           <Header name={this.state.resumeData.basic_info.name}/>
           <Switch>
-            <Route path="/projects" />
+            <Route path="/projects" render={() => <Projects projects={this.state.resumeData.projects}/>} />
             <Route path="/experience" render={() => <Experience experience={this.state.resumeData.experience} />}/>
             <Route exact path="/" render={() => <HomePage data={this.state.resumeData.basic_info} education={this.state.resumeData.education}/>} />
             <Route path="/" render={() => <NotFound404 />}></Route>

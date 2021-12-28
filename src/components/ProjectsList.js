@@ -34,7 +34,9 @@ class ProjectsList extends React.Component {
             return (
                 <Grid item key={i}>
                 <Card 
-                  {...this.state.card_props}
+                  {
+                    ...this.state.card_props
+                  }
                   key={i}
                   onClick={() => {
                     this.handleModalOpen(i);
@@ -58,11 +60,11 @@ class ProjectsList extends React.Component {
                         </Typography>
                         </div>
                         <div>
-                        <Typography
-                          variant="p"
-                        >
-                            {project.brief}
-                        </Typography>
+                            <Typography
+                              variant="p"
+                            >
+                                {project.brief}
+                            </Typography>
                         </div>
                     </CardContent>
                 </Card>

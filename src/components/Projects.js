@@ -30,7 +30,8 @@ function Projects(props) {
                       projects={props.projects} 
                       cardProps={{
                         sx: {
-                          maxWidth: 250,
+                          width: 250,
+                          height: 200,
                           cursor: 'pointer'
                         },
                       }}

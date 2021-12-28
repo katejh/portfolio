@@ -43,9 +43,9 @@
         {
             "name": "Name and Shame",
             "brief": "Hackathon project for Hack the North 2021",
-            "body": "",
+            "body": "<b>test description</b>",
             "images": [],
-            "code-link": "",
+            "code_link": "",
             "url": "",
             "start_date": "Sept 2021",
             "end_date": "Sept 2021",
@@ -56,7 +56,7 @@
             "brief": "Project made for ENPH 253, the robot competition course in Engineering Physics",
             "body": "",
             "images": [],
-            "code-link": "",
+            "code_link": "",
             "url": "",
             "start_date": "May 2021",
             "end_date": "Aug 2021",
@@ -67,7 +67,7 @@
             "brief": "Personal project I work on occasionally to learn React, Django, and Docker",
             "body": "",
             "images": [],
-            "code-link": "",
+            "code_link": "",
             "url": "",
             "start_date": "Apr 2021",
             "end_date": "",
@@ -78,10 +78,10 @@
             "brief": "Hackathon project for cmd-f 2021",
             "body": "",
             "images": [],
-            "code-link": "",
+            "code_link": "",
             "url": "",
-            "start_date": "",
-            "end_date": "",
+            "start_date": "Mar 2021",
+            "end_date": "Mar 2021",
             "technologies": ["Python", "JavaScript", "Flask", "React", "Firebase"]
         },
         {
@@ -89,25 +89,16 @@
             "brief": "Hackathon project for cmd-f 2020",
             "body": "",
             "images": [],
-            "code-link": "",
+            "code_link": "",
             "url": "",
-            "start_date": "",
-            "end_date": "",
+            "start_date": "Mar 2020",
+            "end_date": "Mar 2020",
             "technologies": ["Python", "Django", "HTML"]
         }
     ],
     "experience": {
         "summary": "",
         "jobs": [
-            {
-                "company": "Twitter",
-                "title": "(Incoming) Software Engineer Intern",
-                "start_date": "May 2022",
-                "end_date": "Aug 2022",
-                "technologies": [],
-                "brief": "I'll be joining Twitter as an intern this summer!",
-                "description": ""
-            },
             {
                 "company": "University of British Columbia",
                 "title": "Undergraduate Teaching Assistant - APSC 160",

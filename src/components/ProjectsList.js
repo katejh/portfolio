@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, CardContent, Typography, Grid } from '@mui/material';
 import ProjectModal from './ProjectModal';
+import SkillChip from './SkillChip';
 
 class ProjectsList extends React.Component {
     constructor(props) {
@@ -31,8 +32,15 @@ class ProjectsList extends React.Component {
 
     render() {
         var projects = this.state.projects.map((project, i) => {
+            var skills = project.technologies.map((tech, i) => (
+                <SkillChip
+                  key={i}
+                  skill={tech}
+                />
+            ));
+
             return (
-                <Grid item key={i}>
+                <Grid item key={i} xs={3}>
                 <Card 
                   {
                     ...this.state.card_props
@@ -66,6 +74,9 @@ class ProjectsList extends React.Component {
                             >
                                 {project.brief}
                             </Typography>
+                        </div>
+                        <div style={{marginTop: 2, marginBottom: 8}}>
+                            {skills}
                         </div>
                     </CardContent>
                 </Card>

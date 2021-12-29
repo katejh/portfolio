@@ -1,5 +1,5 @@
 import ProjectsList from "./ProjectsList";
-import { Typography, Box, Grid } from '@mui/material';
+import { Typography, Box } from '@mui/material';
 
 function Projects(props) {
     return (
@@ -21,8 +21,7 @@ function Projects(props) {
                   projects={props.projects} 
                   cardProps={{
                     sx: {
-                      width: 250,
-                      height: 200,
+                      height: '100%',
                       cursor: 'pointer'
                     },
                   }}

@@ -14,6 +14,8 @@ Feel free to use this project as a template (as long as credits are given)!
 
 All you have to do is pull this repository and fill in `./public/resume.json` with your information (see the template below).
 
+Relace `./public/resume.pdf` with your own resume as well.
+
 Make sure to run `npm install` as well!
 
 ## Development

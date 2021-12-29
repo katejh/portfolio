@@ -1,10 +1,11 @@
 import React from 'react';
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
-import { Collapse, Chip, Paper, Divider, Typography } from '@mui/material';
+import { Collapse, Paper, Divider, Typography } from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import WorkIcon from '@mui/icons-material/Work';
+import SkillChip from './SkillChip';
 
 // stylesheets
 import 'react-vertical-timeline-component/style.min.css';
@@ -31,12 +32,9 @@ class ExperienceTimelineElement extends React.Component {
     render() {
         var tech = this.state.technologies.map((skill, i) => {
             return (
-                <Chip 
-                  label={skill}
+                <SkillChip 
+                  skill={skill}
                   key={i}
-                  color='secondary'
-                  size="small"
-                  sx={{mr: 1}}
                 />
             );
         });

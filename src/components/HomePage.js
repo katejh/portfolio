@@ -1,8 +1,10 @@
 import React from 'react';
-import { Paper, Typography, Box, Card, CardContent } from '@mui/material';
+import { Paper, Typography, Box, Card, CardContent, IconButton } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Typical from 'react-typical';
 import Education from './Education';
+import Skills from './Skills';
+import { techToIconClass } from '../helpers/techToIcon';
 
 class HomePage extends React.Component {
     constructor(props) {
@@ -13,7 +15,9 @@ class HomePage extends React.Component {
             name: data.name,
             titles: data.titles,
             description: data.description,
-            education: props.education
+            education: props.education,
+            socials: data.socials,
+            skills: props.skills
         }
 
         // console.log(props.education);
@@ -23,9 +27,19 @@ class HomePage extends React.Component {
 
     render() {
         var greeting = "Hello! I am " + this.state.name;
+
         var titles = this.state.titles.map((title, i) => {
             return [title, 1500]
         }).flat();
+        
+        var socials = this.state.socials.map((social, i) => (
+          <IconButton
+            key={i}
+            onClick={() => window.open(social.url)}
+          >
+            <i className={techToIconClass(social.type)} />
+          </IconButton>
+        ));
 
         return (
             <div>
@@ -103,33 +117,57 @@ class HomePage extends React.Component {
                         >
                             <Typography variant="h4">About Me</Typography>
                         </div>
-                        <div 
-                          style={{
-                            display: 'flex', 
-                            alignContent: 'center', 
-                            justifyContent: 'center'
-                          }}
-                        >
-                          <Card 
-                            sx={{
-                              mt: 4, 
-                              minWidth: '40%'
-                            }} 
-                            variant='outlined'
+                        <div>
+                          <div 
+                            style={{
+                              display: 'flex', 
+                              alignContent: 'center', 
+                              justifyContent: 'center'
+                            }}
                           >
-                              <CardContent sx={{mt: 2, mb: 2}}>
-                                  <Typography variant="p">
-                                      {this.state.description}
-                                  </Typography>
-                                  <div style={{marginTop: 8}}>
-                                      <Typography variant="p">
-                                          Download my <a href="resume.pdf" download>resume</a>!
-                                      </Typography>
-                                  </div>
-                              </CardContent>
-                          </Card>
+                            <Box sx={{mt: 4, mb: 2}}>
+                              {socials}
+                            </Box>
+                          </div>
+                          <div 
+                            style={{
+                              display: 'flex', 
+                              alignContent: 'center', 
+                              justifyContent: 'center'
+                            }}
+                          >
+                            <Card 
+                              sx={{
+                                mt: 2, 
+                                minWidth: '40%'
+                              }} 
+                              variant='outlined'
+                            >
+                                <CardContent sx={{mt: 2, mb: 2}}>
+                                    <Typography variant="p">
+                                        {this.state.description}
+                                    </Typography>
+                                    <div style={{marginTop: 8}}>
+                                        <Typography variant="p">
+                                            Download my <a href="resume.pdf" download>resume</a>!
+                                        </Typography>
+                                    </div>
+                                </CardContent>
+                            </Card>
+                          </div>
                         </div>
                     </div>
+                </Box>
+                <Box 
+                  sx={{
+                    flexGrow: 1, 
+                    mt: 8, 
+                    display: 'flex', 
+                    alignContent: 'center', 
+                    justifyContent: 'center'
+                  }}
+                >
+                    <Skills skills={this.state.skills}/>
                 </Box>
                 <Box 
                   sx={{

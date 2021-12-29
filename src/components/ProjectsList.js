@@ -48,6 +48,7 @@ class ProjectsList extends React.Component {
                     <CardContent>
                         <Typography 
                           variant="h5"
+                          color="primary.dark"
                         >
                             {project.name}
                         </Typography>

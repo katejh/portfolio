@@ -2,10 +2,11 @@ import React from 'react';
 import { Paper, Typography, Box, Card, CardContent, IconButton, Grid } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import EmailIcon from '@mui/icons-material/Email';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import Typical from 'react-typical';
 import Education from './Education';
 import Skills from './Skills';
-import { techToIconClass } from '../helpers/techToIcon';
+import { techToIconClass, TechToIconDefault } from '../helpers/techToIcon';
 
 class HomePage extends React.Component {
     constructor(props) {
@@ -39,7 +40,13 @@ class HomePage extends React.Component {
             key={i}
             onClick={() => window.open(social.url)}
           >
-            <i className={techToIconClass(social.type)} style={{fontSize: '150%'}}/>
+            <TechToIconDefault 
+              tech={social.type} 
+              default={<AccountCircleIcon sx={{fontSize: '150%'}}/>}
+              style={{
+                fontSize: '150%'
+              }}
+            />
           </IconButton>
         ));
 

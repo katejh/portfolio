@@ -38,3 +38,13 @@ export function techToIconClass(tech) {
 
     return "";
 }
+
+export function TechToIconDefault(props) {
+    var iconClass = techToIconClass(props.tech);
+
+    if (!iconClass) {
+        return props.default;
+    }
+
+    return <i className={iconClass} style={props.style}/>
+}

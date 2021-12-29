@@ -1,5 +1,5 @@
 # Kate's Portfolio
-Currently in progress!
+My personal website. See it live at [https://katejh.github.io/portfolio](https://katejh.github.io/portfolio)!
 
 ## Built With
 - [React](https://reactjs.org/)

@@ -22,7 +22,7 @@ class App extends React.Component {
   }
 
   setResumeData() {
-    fetch('/resume.json',
+    fetch(process.env.REACT_APP_ROOT + '/resume.json',
       {
         headers: {
           'Content-Type': 'application/json',
@@ -71,7 +71,7 @@ class App extends React.Component {
       <ThemeProvider theme={theme}>
       <CssBaseline />
       <div className="App">
-        <Router>
+        <Router basename={process.env.REACT_APP_ROOT}>
           <Header name={this.state.resumeData.basic_info.name}/>
           <Switch>
             <Route path="/projects" render={() => <Projects projects={this.state.resumeData.projects}/>} />

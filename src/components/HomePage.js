@@ -48,23 +48,18 @@ class HomePage extends React.Component {
                   elevation={0} 
                   sx={{
                     height: window.innerHeight, 
-                    alignContent: 'center', 
-                    justifyContent: 'center', 
-                    alignItems: 'center', 
-                    textAlign: 'center', 
-                    position: 'relative',
                     background: 'linear-gradient(180deg, rgba(253,29,29,0.5) 0%, rgba(254,201,78,0.5) 100%)'  
                   }}
                 >
                     <div 
                       style={{
-                        display: 'flex', 
-                        alignContent: 'center', 
-                        justifyContent: 'center', 
-                        textAlign: 'center', 
-                        position: 'relative', 
-                        top: '50%', 
-                        transform: 'translateY(-50%)'                         
+                        display: 'flex',
+                        alignContent: 'center',
+                        justifyContent: 'center',
+                        textAlign: 'center',
+                        flexGrow: 2,
+                        height: '100%',
+                        flexDirection: 'column'                       
                       }}
                     >
                         <div>
@@ -83,17 +78,9 @@ class HomePage extends React.Component {
                                 <Typical steps={titles} loop={Infinity}/>
                             </Typography>
                         </div>
-                    </div>
-                    <div 
-                      style={{
-                        display: 'flex', 
-                        position: 'absolute', 
-                        left: '50%', 
-                        transform: 'translateX(-50%)', 
-                        bottom: 20
-                      }}
-                    >
-                        <ExpandMoreIcon fontSize="large"/>
+                        <div>
+                          <ExpandMoreIcon fontSize="large"/>
+                        </div>
                     </div>
                 </Paper>
                 </Box>

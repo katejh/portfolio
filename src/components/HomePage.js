@@ -1,6 +1,7 @@
 import React from 'react';
 import { Paper, Typography, Box, Card, CardContent, IconButton, Grid } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import EmailIcon from '@mui/icons-material/Email';
 import Typical from 'react-typical';
 import Education from './Education';
 import Skills from './Skills';
@@ -17,6 +18,7 @@ class HomePage extends React.Component {
             description: data.description,
             education: props.education,
             socials: data.socials,
+            email: data.email,
             skills: props.skills
         }
 
@@ -108,22 +110,33 @@ class HomePage extends React.Component {
                             <Typography variant="h4">About Me</Typography>
                         </div>
                         <div>
-                          <div 
-                            style={{
+                          <Box 
+                            sx={{
                               display: 'flex', 
                               alignContent: 'center', 
-                              justifyContent: 'center'
+                              justifyContent: 'center',
+                              mt: 4
                             }}
                           >
-                            <Box sx={{mt: 4, mb: 2}}>
-                              {socials}
-                            </Box>
-                          </div>
-                          <div 
-                            style={{
+                            {socials}
+                          </Box>
+                          <Box 
+                            sx={{
                               display: 'flex', 
                               alignContent: 'center', 
-                              justifyContent: 'center'
+                              justifyContent: 'center',
+                              mt: 2,
+                            }}
+                          >
+                              <EmailIcon style={{fontSize: '200%'}}/> 
+                              <div style={{marginLeft: 8}}>{this.state.email}</div>
+                          </Box>
+                          <Box 
+                            sx={{
+                              display: 'flex', 
+                              alignContent: 'center', 
+                              justifyContent: 'center',
+                              mt: 2
                             }}
                           >
                             <Card 
@@ -144,7 +157,7 @@ class HomePage extends React.Component {
                                     </div>
                                 </CardContent>
                             </Card>
-                          </div>
+                          </Box>
                         </div>
                     </div>
                 </Box>

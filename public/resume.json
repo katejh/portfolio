@@ -14,7 +14,8 @@
             }
         ],
         "description": "I'm Kate Huang, a student",
-        "titles": ["student", "developer"]
+        "titles": ["student", "developer"],
+        "email": "huang.katej@gmail.com"
     },
     "education": [
         {
@@ -38,14 +39,14 @@
             "brief": "I was in Engineering Physics, an intensive program combining mechanical, electrical, and computer engineering, as well as math and physics. Though it was an enriching experience, I eventually decided that software was my passion and transferred to Computer Science."
         }
     ],
-    "skills": ["Python", "JavaScript", "Java"],
+    "skills": ["Python", "JavaScript", "Java", "C++"],
     "projects": [
         {
             "name": "Name and Shame",
             "brief": "Hackathon project for Hack the North 2021",
-            "body": "<b>test description</b>",
+            "body": "",
             "images": [],
-            "code_link": "",
+            "code_link": "https://github.com/katejh/name-and-shame",
             "url": "",
             "start_date": "Sept 2021",
             "end_date": "Sept 2021",

@@ -115,11 +115,11 @@ class Education extends React.Component {
                   }}
                 >
                     <Box 
-                    sx={{
+                      sx={{
                         mt: 4,
                         width: '75%',
                         display: 'flex',
-                    }}
+                      }}
                     >
                         <VerticalTimeline layout='1-column-left'>
                             {educations}

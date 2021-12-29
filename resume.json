@@ -13,7 +13,7 @@
                 "url": "https://linkedin.com/in/katejh"
             }
         ],
-        "description": "I'm Kate Huang, a student",
+        "description": "I'm Kate Huang, a computer science student at the University of British Columbia. I have had one previous software development co-op with Loblaw Digital doing full stack development. My personal projects are mostly web-based, although I have dabbled in robotics in the past! In my spare time, I like to play piano, play with my dog, and draw.",
         "titles": ["student", "developer"],
         "email": "huang.katej@gmail.com"
     },
@@ -26,7 +26,7 @@
             "end_date": "May 2024",
             "gpa": "",
             "gpa_4_33_scale": "",
-            "brief": ""
+            "brief": "Currently in computer science with year 2 standing."
         },
         {
             "school": "University of British Columbia",
@@ -36,7 +36,7 @@
             "end_date": "Aug 2021",
             "gpa": "87.6",
             "gpa_4_33_scale": "4.1",
-            "brief": "I was in Engineering Physics, an intensive program combining mechanical, electrical, and computer engineering, as well as math and physics. Though it was an enriching experience, I eventually decided that software was my passion and transferred to Computer Science."
+            "brief": "I was in Engineering Physics, an intensive program combining mechanical, electrical, and computer engineering, as well as math and physics. Though it was an enriching experience, I eventually decided that software was my passion and transferred to Computer Science. Awards include Dean's Honours List and Trek Scholarship (awarded to top 5% of undergraduate students)."
         }
     ],
     "skills": ["Python", "JavaScript", "Java", "C++"],
@@ -44,7 +44,7 @@
         {
             "name": "Name and Shame",
             "brief": "Hackathon project for Hack the North 2021",
-            "body": "<b>test description</b>",
+            "body": "A review website for companies geared towards rating their ethical practices. This includes their carbon footprint, stance on human rights, work culture, etc.<br><br>This project was orchestrated locally with Docker, which allowed us develop across all our devices without any local development incompatibilities, create a local database with ease, and run our project with a single Docker command!<br><br>This project was built using a MERN stack.",
             "images": [],
             "code_link": "https://github.com/katejh/name-and-shame",
             "url": "",
@@ -55,10 +55,10 @@
         {
             "name": "ENPH 253 Robot",
             "brief": "Project made for ENPH 253, the robot competition course in Engineering Physics",
-            "body": "",
+            "body": "A can-collecting robot made completely from scratch! We constructed the robot using mainly chloroplast and some 3D printed parts. We learned how to build H-bridges and use IR sensors and potentiometers in conjunction with a BluePill microcontroller. <br><br> My role on this project was to design the robot's tape-following logic and overall software integration. Tape-following was implemented with IR sensors and a PID algorithm.",
             "images": [],
-            "code_link": "",
-            "url": "",
+            "code_link": "https://github.com/katejh/pepsibot",
+            "url": "https://youtu.be/xkh0X_zH3i8",
             "start_date": "May 2021",
             "end_date": "Aug 2021",
             "technologies": ["C++", "BluePill STM32", "Arduino"]
@@ -66,9 +66,9 @@
         {
             "name": "Blogmedia",
             "brief": "Personal project I work on occasionally to learn React, Django, and Docker",
-            "body": "",
+            "body": "This is a work in progress! So far, the vision is a simple blogging website similar to Tumblr or Twitter. The project is structured as a React SPA and a Django backend which interacts with the frontend using REST APIs. The backend is mainly basic CRUD operations on a PostgreSQL database (using Django's built-in database interface).<br><br>The entire project is orchestrated with Docker, including the frontend, backend, and database!",
             "images": [],
-            "code_link": "",
+            "code_link": "https://github.com/katejh/blogmedia",
             "url": "",
             "start_date": "Apr 2021",
             "end_date": "",
@@ -77,9 +77,9 @@
         {
             "name": "Women In Stem",
             "brief": "Hackathon project for cmd-f 2021",
-            "body": "",
+            "body": "A fun REST API for learning about women's accomplishments in STEM! Our vision was that this API would be similar to APIs like a <a href='https://www.programmableweb.com/category/history/api'>history API</a>. We collected data about various female scientists and engineers and stored them in Firebase, served the API with Flask (which interacted with our Firebase database using CRUD operations), and built a React frontend to show off our API!",
             "images": [],
-            "code_link": "",
+            "code_link": "https://github.com/katejh/women_in_stem",
             "url": "",
             "start_date": "Mar 2021",
             "end_date": "Mar 2021",
@@ -88,9 +88,9 @@
         {
             "name": "SaveE",
             "brief": "Hackathon project for cmd-f 2020",
-            "body": "",
+            "body": "An app designed to motivate people to conserve their energy usage using a gamified competition system between users of the app on local, national, and global levels. Built using the Django framework with statically served HTML pages.",
             "images": [],
-            "code_link": "",
+            "code_link": "https://github.com/katejh/savee",
             "url": "",
             "start_date": "Mar 2020",
             "end_date": "Mar 2020",
@@ -101,22 +101,13 @@
         "summary": "",
         "jobs": [
             {
-                "company": "Twitter",
-                "title": "(Incoming) Software Engineer Intern",
-                "start_date": "May 2022",
-                "end_date": "Aug 2022",
-                "technologies": [],
-                "brief": "I'll be joining Twitter as an intern this summer!",
-                "description": ""
-            },
-            {
                 "company": "University of British Columbia",
                 "title": "Undergraduate Teaching Assistant - APSC 160",
                 "start_date": "Sept 2021",
                 "end_date": "Dec 2021",
                 "technologies": ["C"],
                 "brief": "Teaching assistant for intro to C course for engineering students",
-                "description": ""
+                "description": "Assisted with students' understanding of worksheets in lecture and also did marking of labs and exams."
             },
             {
                 "company": "Loblaw Digital",
@@ -124,8 +115,8 @@
                 "start_date": "Jan 2021",
                 "end_date": "Apr 2021",
                 "technologies": ["PHP", "JavaScript", "Zend", "jQuery", "MySQL", "Docker", "Google Cloud Platform", "Git"],
-                "brief": "Software development intern for Loblaw Marketplace",
-                "description": "Seller Portal team"
+                "brief": "Software development co-op, Loblaw Marketplace",
+                "description": "I was a software development co-op on the Seller Portal team, which built and maintained the platform for third-party sellers on Loblaw Marketplace to manage their orders and products on the website. I was involved with full-stack development, unit testing, and UAT! Some highlights of my time there include rewriting graphics that summarize aggregrated data about user and store growth for our site admins, expanding our use of Canada Post's shipping label APIs so that sellers can make more effectively manage their orders with Canada Post, and tons of bug-catching (and fixing!)."
             },
             {
                 "company": "University of British Columbia",

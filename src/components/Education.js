@@ -31,7 +31,7 @@ class Education extends React.Component {
                 ed.end_date : "Current");
 
             return (
-                <ThemeProvider theme={(theme) => { 
+                <ThemeProvider key={i} theme={(theme) => { 
                     //console.log(theme.palette);
                     const newTheme = createTheme({
                         ...theme,

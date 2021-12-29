@@ -1,0 +1,186 @@
+{
+    "basic_info": {
+        "name": "Kate Huang",
+        "first-name": "Kate",
+        "last-name": "Huang",
+        "socials": [
+            {
+                "type": "github",
+                "url": "https://github.com/katejh"
+            },
+            {
+                "type": "linkedin",
+                "url": "https://linkedin.com/in/katejh"
+            }
+        ],
+        "description": "I'm Kate Huang, a student",
+        "titles": ["student", "developer"],
+        "email": "huang.katej@gmail.com"
+    },
+    "education": [
+        {
+            "school": "University of British Columbia",
+            "degree": "Bachelor's of Science",
+            "major": "Computer Science",
+            "start_date": "Sept 2021",
+            "end_date": "May 2024",
+            "gpa": "",
+            "gpa_4_33_scale": "",
+            "brief": ""
+        },
+        {
+            "school": "University of British Columbia",
+            "degree": "Bachelor's of Applied Science",
+            "major": "Engineering Physics",
+            "start_date": "Sept 2019",
+            "end_date": "Aug 2021",
+            "gpa": "87.6",
+            "gpa_4_33_scale": "4.1",
+            "brief": "I was in Engineering Physics, an intensive program combining mechanical, electrical, and computer engineering, as well as math and physics. Though it was an enriching experience, I eventually decided that software was my passion and transferred to Computer Science."
+        }
+    ],
+    "skills": ["Python", "JavaScript", "Java", "C++"],
+    "projects": [
+        {
+            "name": "Name and Shame",
+            "brief": "Hackathon project for Hack the North 2021",
+            "body": "<b>test description</b>",
+            "images": [],
+            "code_link": "https://github.com/katejh/name-and-shame",
+            "url": "",
+            "start_date": "Sept 2021",
+            "end_date": "Sept 2021",
+            "technologies": ["JavaScript", "React", "MongoDB", "Express", "Node", "Docker"]
+        },
+        {
+            "name": "ENPH 253 Robot",
+            "brief": "Project made for ENPH 253, the robot competition course in Engineering Physics",
+            "body": "",
+            "images": [],
+            "code_link": "",
+            "url": "",
+            "start_date": "May 2021",
+            "end_date": "Aug 2021",
+            "technologies": ["C++", "BluePill STM32", "Arduino"]
+        },
+        {
+            "name": "Blogmedia",
+            "brief": "Personal project I work on occasionally to learn React, Django, and Docker",
+            "body": "",
+            "images": [],
+            "code_link": "",
+            "url": "",
+            "start_date": "Apr 2021",
+            "end_date": "",
+            "technologies": ["Python", "JavaScript", "Django", "React", "PostgreSQL", "Docker"]
+        },
+        {
+            "name": "Women In Stem",
+            "brief": "Hackathon project for cmd-f 2021",
+            "body": "",
+            "images": [],
+            "code_link": "",
+            "url": "",
+            "start_date": "Mar 2021",
+            "end_date": "Mar 2021",
+            "technologies": ["Python", "JavaScript", "Flask", "React", "Firebase"]
+        },
+        {
+            "name": "SaveE",
+            "brief": "Hackathon project for cmd-f 2020",
+            "body": "",
+            "images": [],
+            "code_link": "",
+            "url": "",
+            "start_date": "Mar 2020",
+            "end_date": "Mar 2020",
+            "technologies": ["Python", "Django", "HTML"]
+        }
+    ],
+    "experience": {
+        "summary": "",
+        "jobs": [
+            {
+                "company": "Twitter",
+                "title": "(Incoming) Software Engineer Intern",
+                "start_date": "May 2022",
+                "end_date": "Aug 2022",
+                "technologies": [],
+                "brief": "I'll be joining Twitter as an intern this summer!",
+                "description": ""
+            },
+            {
+                "company": "University of British Columbia",
+                "title": "Undergraduate Teaching Assistant - APSC 160",
+                "start_date": "Sept 2021",
+                "end_date": "Dec 2021",
+                "technologies": ["C"],
+                "brief": "Teaching assistant for intro to C course for engineering students",
+                "description": ""
+            },
+            {
+                "company": "Loblaw Digital",
+                "title": "Software Developer Co-op",
+                "start_date": "Jan 2021",
+                "end_date": "Apr 2021",
+                "technologies": ["PHP", "JavaScript", "Zend", "jQuery", "MySQL", "Docker", "Google Cloud Platform", "Git"],
+                "brief": "Software development intern for Loblaw Marketplace",
+                "description": "Seller Portal team"
+            },
+            {
+                "company": "University of British Columbia",
+                "title": "Undergraduate Teaching Assistant - MATH 100",
+                "start_date": "Sept 2020",
+                "end_date": "Dec 2020",
+                "technologies": [],
+                "brief": "Workshop assistant for Calculus I",
+                "description": ""
+            },
+            {
+                "company": "Unmanned Aircraft Systems",
+                "title": "Software Team Member",
+                "start_date": "Sept 2020",
+                "end_date": "Dec 2020",
+                "technologies": ["Python", "JavaScript", "React", "Git", "Docker"],
+                "brief": "",
+                "description": ""
+            },
+            {
+                "company": "Snowbots",
+                "title": "Software Team Member",
+                "start_date": "Sept 2019",
+                "end_date": "Apr 2020",
+                "technologies": ["C++", "ROS"],
+                "brief": "",
+                "description": ""
+            }
+        ]
+    },
+    "courses": [
+        {
+            "code": "CPSC 221",
+            "title": "Basic Algorithms and Data Structures",
+            "brief": "Design and analysis of algorithms and data structures"
+        },
+        {
+            "code": "CPSC 213",
+            "title": "Introduction to Computer Systems",
+            "brief": "Assembly, memory, control flows, procedures and stack, I/O devices, asynchrony, synchronization"
+        },
+        {
+            "code": "CPEN 221",
+            "title": "Software Construction I",
+            "brief": "An introduction to practices in software engineering. OOP, unit testing, abstraction and specifications"
+        },
+        {
+            "code": "ENPH 253",
+            "title": "Introduction to Instrument Design",
+            "brief": "Engineering Physics's summer robot competition for second years"
+        },
+        {
+            "code": "ENPH 259",
+            "title": "Experimental Techniques",
+            "brief": "Lab course learning how to construct electrical circuits. Analog-digital conversion, op-amps"
+        }
+    ]
+}

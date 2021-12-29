@@ -40,7 +40,7 @@ class ProjectsList extends React.Component {
             ));
 
             return (
-                <Grid item key={i} xs={3}>
+                <Grid item key={i} md={3}>
                 <Card 
                   {
                     ...this.state.card_props

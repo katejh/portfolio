@@ -21,6 +21,7 @@ function ProjectModal(props) {
             onClose={props.onClose}
             aria-labelledby="modal-modal-title"
             aria-describedby="modal-modal-description"
+            sx={{overflow: 'scroll'}}
         >
             <Card sx={{
                 position: 'absolute',

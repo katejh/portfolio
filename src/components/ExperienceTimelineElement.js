@@ -86,7 +86,7 @@ class ExperienceTimelineElement extends React.Component {
                 <Paper 
                   elevation={0}
                   onClick={() => {this.setState({open: !this.state.open})}}
-                  style={{cursor: 'pointer'}}
+                  style={this.state.description ? {cursor: 'pointer'} : {}}
                 >
                     <Typography variant="h5" className="vertical-timeline-element-title">
                         {this.state.company}

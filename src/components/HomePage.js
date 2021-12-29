@@ -135,7 +135,7 @@ class HomePage extends React.Component {
                               mt: 2,
                             }}
                           >
-                              <EmailIcon style={{fontSize: '200%'}}/> 
+                              <EmailIcon style={{fontSize: '170%'}}/> 
                               <div style={{marginLeft: 8}}>{this.state.email}</div>
                           </Box>
                           <Box 
@@ -143,13 +143,14 @@ class HomePage extends React.Component {
                               display: 'flex', 
                               alignContent: 'center', 
                               justifyContent: 'center',
-                              mt: 2
+                              mt: 2,
                             }}
                           >
                             <Card 
                               sx={{
                                 mt: 2, 
-                                minWidth: '40%'
+                                minWidth: '40%',
+                                maxWidth: '70%'
                               }} 
                               variant='outlined'
                             >

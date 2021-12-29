@@ -39,7 +39,7 @@
             "brief": "I was in Engineering Physics, an intensive program combining mechanical, electrical, and computer engineering, as well as math and physics. Though it was an enriching experience, I eventually decided that software was my passion and transferred to Computer Science. Awards include Dean's Honours List and Trek Scholarship (awarded to top 5% of undergraduate students)."
         }
     ],
-    "skills": ["Python", "JavaScript", "Java", "C++"],
+    "skills": ["Python", "JavaScript", "Java", "C++", "Git", "React", "Docker", "Flask"],
     "projects": [
         {
             "name": "Name and Shame",

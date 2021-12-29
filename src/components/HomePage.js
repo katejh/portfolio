@@ -1,5 +1,5 @@
 import React from 'react';
-import { Paper, Typography, Box, Card, CardContent, IconButton } from '@mui/material';
+import { Paper, Typography, Box, Card, CardContent, IconButton, Grid } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Typical from 'react-typical';
 import Education from './Education';
@@ -47,26 +47,27 @@ class HomePage extends React.Component {
                 <Paper 
                   elevation={0} 
                   sx={{
-                    height: window.innerHeight, 
+                    height: window.innerHeight - 60, // take up height of window minus navbar
                     background: 'linear-gradient(180deg, rgba(253,29,29,0.5) 0%, rgba(254,201,78,0.5) 100%)'  
                   }}
                 >
-                    <div 
-                      style={{
+                    <Grid container
+                      direction="column"
+                      sx={{
                         display: 'flex',
                         alignContent: 'center',
-                        justifyContent: 'center',
+                        justifyContent: 'space-between',
                         textAlign: 'center',
                         flexGrow: 2,
                         height: '100%',
                         flexDirection: 'column'                       
                       }}
                     >
-                        <div>
+                        <Grid item /> {/* take up top row so greeting can be centered */}
+                        <Grid item>
                             <Typography 
                               color="text" 
                               variant="h3" 
-                              style={{align: 'column'}}
                             >
                                 <Typical steps={[greeting]} />
                             </Typography>
@@ -77,11 +78,13 @@ class HomePage extends React.Component {
                             >
                                 <Typical steps={titles} loop={Infinity}/>
                             </Typography>
-                        </div>
-                        <div>
-                          <ExpandMoreIcon fontSize="large"/>
-                        </div>
-                    </div>
+                        </Grid>
+                        <Grid item>
+                          <div style={{marginBottom: 20}}>
+                            <ExpandMoreIcon fontSize="large"/>
+                          </div>
+                        </Grid>
+                    </Grid>
                 </Paper>
                 </Box>
                 <Box 

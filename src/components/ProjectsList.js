@@ -42,9 +42,7 @@ class ProjectsList extends React.Component {
             return (
                 <Grid item key={i} md={3}>
                 <Card 
-                  {
-                    ...this.state.card_props
-                  }
+                  {...this.state.card_props}
                   key={i}
                   onClick={() => {
                     this.handleModalOpen(i);

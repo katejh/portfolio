@@ -37,7 +37,7 @@ class HomePage extends React.Component {
             key={i}
             onClick={() => window.open(social.url)}
           >
-            <i className={techToIconClass(social.type)} />
+            <i className={techToIconClass(social.type)} style={{fontSize: '150%'}}/>
           </IconButton>
         ));
 

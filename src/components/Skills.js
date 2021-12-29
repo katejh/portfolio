@@ -1,11 +1,11 @@
-import { Grid, Card, CardContent, CardMedia, Typography, Box } from '@mui/material';
+import { Grid, Card, Typography, Box } from '@mui/material';
 import { techToIconClass } from '../helpers/techToIcon';
 
 function Skills(props) {
     var skills = props.skills.map((skill, i) => (
         <Grid item key={i}>
             <Card sx={{
-                width: 100,
+                width: 120,
                 height: 120,
                 flexGrow: 1,
             }}>
@@ -42,6 +42,11 @@ function Skills(props) {
                 <Grid 
                   container
                   spacing={2}
+                  sx={{
+                    display: 'flex',
+                    alignContent: 'center',
+                    justifyContent: 'center'
+                  }}
                 >
                     {skills}
                 </Grid>

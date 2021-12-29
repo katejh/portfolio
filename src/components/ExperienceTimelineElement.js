@@ -91,7 +91,7 @@ class ExperienceTimelineElement extends React.Component {
                     <Typography variant="h5" className="vertical-timeline-element-title">
                         {this.state.company}
                     </Typography>
-                    <Typography variant="h6" className="vertical-timeline-element-subtitle" color="primary.dark">
+                    <Typography variant="h6" className="vertical-timeline-element-subtitle" color="primary">
                         {this.state.title}
                     </Typography>
                     <div style={{marginTop: 2, marginBottom: 8}}>{tech}</div>

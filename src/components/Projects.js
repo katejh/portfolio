@@ -21,8 +21,7 @@ function Projects(props) {
                   projects={props.projects} 
                   cardProps={{
                     sx: {
-                      height: '100%',
-                      cursor: 'pointer'
+                      height: '100%'
                     },
                   }}
                   gridProps={{

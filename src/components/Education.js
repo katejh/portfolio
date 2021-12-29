@@ -71,7 +71,7 @@ class Education extends React.Component {
                         <Typography 
                           variant="h6" 
                           className="vertical-timeline-element-subtitle" 
-                          color="primary.dark"
+                          color="primary"
                         >
                             {ed.degree + (ed.major ? ", " + ed.major : "")}
                         </Typography>

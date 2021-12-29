@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardContent, Typography, Grid } from '@mui/material';
+import { Card, CardContent, CardActions, Button, Typography, Grid } from '@mui/material';
 import ProjectModal from './ProjectModal';
 import SkillChip from './SkillChip';
 
@@ -44,17 +44,24 @@ class ProjectsList extends React.Component {
                 <Card 
                   {...this.state.card_props}
                   key={i}
-                  onClick={() => {
-                    this.handleModalOpen(i);
-                    if (this.state.card_props.onClick) {
-                        this.state.card_props.onClick();
-                    }
-                  }}
                 >
-                    <CardContent>
+                    <CardContent 
+                      onClick={this.state.show_modal ? 
+                        () => {
+                            this.handleModalOpen(i);
+                            if (this.state.card_props.onClick) {
+                                this.state.card_props.onClick();
+                            }
+                        } :
+                        undefined
+                      }
+                      style={this.state.show_modal ?
+                        {cursor: 'pointer'} : {}
+                      }
+                    >
                         <Typography 
                           variant="h5"
-                          color="primary.dark"
+                          color="primary"
                         >
                             {project.name}
                         </Typography>
@@ -77,6 +84,16 @@ class ProjectsList extends React.Component {
                             {skills}
                         </div>
                     </CardContent>
+                    <CardActions>
+                        {project.code_link ?
+                            <Button onClick={() => window.open(project.code_link)}>Code</Button>
+                            : null
+                        }
+                        {project.url ?
+                            <Button onClick={() => window.open(project.url)}>Demo</Button>
+                            : null
+                        }
+                    </CardActions>
                 </Card>
                 </Grid>
             );

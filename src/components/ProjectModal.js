@@ -1,4 +1,4 @@
-import { Card, CardContent, Typography, Modal, Box } from '@mui/material';
+import { Card, CardContent, Typography, Modal, Box, Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import SkillChip from './SkillChip';
 
@@ -51,23 +51,15 @@ function ProjectModal(props) {
                     <div style={{marginTop: 2, marginBottom: 8}}>
                         {tech}
                     </div>
-                    <div>
-                        <Typography>
-                            {project.code_link ?
-                                <StyledLink href={project.code_link}>
-                                    See the source code!
-                                </StyledLink> 
-                                : ""}
-                        </Typography>
-                    </div>
-                    <div>
-                        <Typography>
-                            {project.url ? 
-                                <StyledLink href={project.url}>
-                                    See the demo!
-                                </StyledLink> 
-                                : ""}
-                        </Typography>
+                    <div style={{marginLeft: -10}}>
+                        {project.code_link ?
+                            <Button onClick={() => window.open(project.code_link)}>Code</Button>
+                            : null
+                        }
+                        {project.url ?
+                            <Button onClick={() => window.open(project.url)}>Demo</Button>
+                            : null
+                        }
                     </div>
                     <Box sx={{mt: 2}}>
                         <Typography variant="p">

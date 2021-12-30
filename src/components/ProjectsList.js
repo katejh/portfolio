@@ -80,9 +80,21 @@ class ProjectsList extends React.Component {
                                 {project.brief}
                             </Typography>
                         </div>
-                        <div style={{marginTop: 2, marginBottom: 8}}>
+                        <div style={{marginTop: 2}}>
                             {skills}
                         </div>
+                        {
+                            this.state.show_modal ? 
+                                <div style={{marginTop: 4}}>
+                                    <Typography
+                                      variant="p"
+                                      color="text.secondary"
+                                    >
+                                        Click for more
+                                    </Typography>
+                                </div>
+                                : null
+                        }
                     </CardContent>
                     <CardActions>
                         {project.code_link ?

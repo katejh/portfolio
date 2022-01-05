@@ -13,8 +13,8 @@
                 "url": "https://linkedin.com/in/katejh"
             }
         ],
-        "description": "I'm Kate Huang, a computer science student at the University of British Columbia. I have had one previous software development co-op with Loblaw Digital doing full stack development. My personal projects are mostly web-based, although I have dabbled in robotics in the past! In my spare time, I like to play piano, play with my dog, and draw.",
-        "titles": ["student", "developer"],
+        "description": "I'm Kate, a student at the University of British Columbia (expected graduation May 2024). I'm currently studying Computer Science! In addition to my courses, I work on full-stack web projects in my spare time to supplement my learning in software development. I've had one previous full-stack development co-op and have been a teaching assistant for two undergrad courses at UBC. Before entering the computer science program, I studied engineering physics and was on two robotics design teams. In my spare time, I like to play piano, play with my dog, and draw.",
+        "titles": ["student", "full-stack developer"],
         "email": "huang.katej@gmail.com"
     },
     "education": [
@@ -44,7 +44,7 @@
         {
             "name": "Name and Shame",
             "brief": "Hackathon project for Hack the North 2021",
-            "body": "A review website for companies geared towards rating their ethical practices. This includes their carbon footprint, stance on human rights, work culture, etc.<br><br>This project was orchestrated locally with Docker, which allowed us develop across all our devices without any local development incompatibilities, create a local database with ease, and run our project with a single Docker command!<br><br>This project was built using a MERN stack.",
+            "body": "A review website for companies geared towards rating their ethical practices. This includes their carbon footprint, stance on human rights, work culture, etc.<br><br>This project was orchestrated locally with Docker, which allowed us develop across all our devices without any local development incompatibilities, create a local MongoDB database with ease, and run our project with a single Docker command!<br><br>This project was built using a MERN stack.",
             "images": [],
             "code_link": "https://github.com/katejh/name-and-shame",
             "url": "",
@@ -55,7 +55,7 @@
         {
             "name": "ENPH 253 Robot",
             "brief": "Project made for ENPH 253, the robot competition course in Engineering Physics",
-            "body": "A can-collecting robot made completely from scratch! We constructed the robot using mainly chloroplast and some 3D printed parts. We learned how to build H-bridges and use IR sensors and potentiometers in conjunction with a BluePill microcontroller. <br><br> My role on this project was to design the robot's tape-following logic and overall software integration. Tape-following was implemented with IR sensors and a PID algorithm.",
+            "body": "A can-collecting robot made completely from scratch! We constructed the robot using mainly coroplast and some 3D printed parts. Some examples of what we learned include building H-bridges, integrating sensors, and managing power supplies, and using a BluePill microcontroller. <br><br> My role on this project was to design the robot's tape-following logic and overall software integration. Tape-following was implemented with IR sensors, op-amps, and a PID algorithm.",
             "images": [],
             "code_link": "https://github.com/katejh/pepsibot",
             "url": "https://youtu.be/xkh0X_zH3i8",
@@ -65,13 +65,13 @@
         },
         {
             "name": "Blogmedia",
-            "brief": "Personal project I work on occasionally to learn React, Django, and Docker",
-            "body": "This is a work in progress! So far, the vision is a simple blogging website similar to Tumblr or Twitter. The project is structured as a React SPA and a Django backend which interacts with the frontend using REST APIs. The backend is mainly basic CRUD operations on a PostgreSQL database (using Django's built-in database interface).<br><br>The entire project is orchestrated with Docker, including the frontend, backend, and database!",
+            "brief": "Personal project I made to learn full-stack development with React, Django, and Docker",
+            "body": "The intended product is a simple blogging website similar to Tumblr or Twitter. The project is structured as a React SPA and a Django backend which interacts with the frontend using REST APIs. The backend is mainly basic CRUD operations on a PostgreSQL database (using Django's built-in database interface).<br><br>The entire project is orchestrated with Docker, including the frontend, backend, and database!",
             "images": [],
             "code_link": "https://github.com/katejh/blogmedia",
             "url": "",
             "start_date": "Apr 2021",
-            "end_date": "",
+            "end_date": "May 2021",
             "technologies": ["Python", "JavaScript", "Django", "React", "PostgreSQL", "Docker"]
         },
         {
@@ -98,8 +98,17 @@
         }
     ],
     "experience": {
-        "summary": "",
+        "summary": "I have had one previous co-op doing full-stack development at Loblaw Digital and have been a teaching assistant for one computer science course and one math course. This summer, I'm excited to say that I'll be joining Twitter as a SWE intern!",
         "jobs": [
+            {
+                "company": "Twitter",
+                "title": "(Incoming) Software Engineering Intern",
+                "start_date": "May 2022",
+                "end_date": "Dec 2022",
+                "technologies": [],
+                "brief": "",
+                "description": ""
+            },
             {
                 "company": "University of British Columbia",
                 "title": "Undergraduate Teaching Assistant - APSC 160",
@@ -116,7 +125,7 @@
                 "end_date": "Apr 2021",
                 "technologies": ["PHP", "JavaScript", "Zend", "jQuery", "MySQL", "Docker", "Google Cloud Platform", "Git"],
                 "brief": "Software development co-op, Loblaw Marketplace",
-                "description": "I was a software development co-op on the Seller Portal team, which built and maintained the platform for third-party sellers on Loblaw Marketplace to manage their orders and products on the website. I was involved with full-stack development, unit testing, and UAT! Some highlights of my time there include rewriting graphics that summarize aggregrated data about user and store growth for our site admins, expanding our use of Canada Post's shipping label APIs so that sellers can make more effectively manage their orders with Canada Post, and tons of bug-catching (and fixing!)."
+                "description": "I was a software development co-op on the Seller Portal team, which built and maintained the platform for third-party sellers on Loblaw Marketplace to manage their orders and products on the website. I was involved with full-stack development, unit testing, and UAT! Some highlights of my time there include rewriting graphics that summarize aggregrated data about user and store growth for our site admins, expanding our use of Canada Post's shipping label APIs so that sellers can more effectively manage their orders with Canada Post, and tons of bug-catching (and fixing!)."
             },
             {
                 "company": "University of British Columbia",
@@ -133,8 +142,8 @@
                 "start_date": "Sept 2020",
                 "end_date": "Dec 2020",
                 "technologies": ["Python", "JavaScript", "React", "Git", "Docker"],
-                "brief": "",
-                "description": ""
+                "brief": "Worked on the software team at UBC UAS, a design team engineering small unmanned aircraft/drones.",
+                "description": "My accomplishments include improving the UI for our ground-based controller (written in React) and writing documentation for development and usage of one of UAS's aircraft's on-board software."
             },
             {
                 "company": "Snowbots",
@@ -142,8 +151,8 @@
                 "start_date": "Sept 2019",
                 "end_date": "Apr 2020",
                 "technologies": ["C++", "ROS"],
-                "brief": "",
-                "description": ""
+                "brief": "Worked on the software team at UBC Snowbots, a design team building autonomous robots for the Canadian Internation Rover Challenge.",
+                "description": "I completed the onboarding challenge, which was to write a full ROS program with the goal of steering a robot toward a hole in a wall of cones, which is sensed using a LiDAR scanner. This included understanding concepts such as the publish-subscribe pattern and handling C++ data types and memory."
             }
         ]
     },

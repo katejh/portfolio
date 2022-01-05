@@ -6,6 +6,7 @@ This website was made with responsive design in mind.
 ## Built With
 - [React](https://reactjs.org/)
 - [Material UI](https://mui.com/)
+- [React Router](https://reactrouter.com/)
 - [react-vertical-timeline](https://github.com/stephane-monnot/react-vertical-timeline)
 
 ## Setup
@@ -14,7 +15,7 @@ Feel free to use this project as a template (as long as credits are given)!
 
 All you have to do is pull this repository and fill in `./public/resume.json` with your information (see the template below).
 
-Relace `./public/resume.pdf` with your own resume as well.
+Replace `./public/resume.pdf` with your own resume.
 
 Make sure to run `npm install` as well!
 

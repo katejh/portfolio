@@ -7,6 +7,8 @@ import Typical from 'react-typical';
 import Education from './Education';
 import Skills from './Skills';
 import { techToIconClass, TechToIconDefault } from '../helpers/techToIcon';
+import { Link } from 'react-router-dom';
+import { styled } from '@mui/material/styles';
 
 class HomePage extends React.Component {
     constructor(props) {
@@ -49,6 +51,10 @@ class HomePage extends React.Component {
             />
           </IconButton>
         ));
+
+        const StyledLink = styled(Link)(({theme}) => ({
+          color: theme.palette.primary.main,
+      }));
 
         return (
             <div>
@@ -190,6 +196,53 @@ class HomePage extends React.Component {
                   }}
                 >
                     <Education education={this.state.education} />
+                </Box>
+                <Box 
+                  sx={{
+                    flexGrow: 1, 
+                    mt: 8, 
+                    display: 'flex', 
+                    alignContent: 'center', 
+                    justifyContent: 'center'
+                  }}
+                >
+                  <div style={{flexGrow: 1}}>
+                    <div 
+                      style={{
+                        display: 'flex', 
+                        alignContent: 'center', 
+                        justifyContent: 'center', 
+                        textAlign: 'center'
+                      }}
+                    >
+                        <Typography variant="h4">More</Typography>
+                    </div>
+                    <Grid
+                      container
+                      sx={{
+                        display: 'flex',
+                        alignContent: 'center',
+                        justifyContent: 'center',
+                        textAlign: 'center',
+                        flexGrow: 2,
+                        height: '100%',
+                        mt: 4                       
+                      }}
+                    >
+                      <Grid item xs={3} />
+                      <Grid item xs={3}>
+                        <StyledLink to="/experience">
+                          <Typography variant="h5">My experience</Typography>
+                        </StyledLink>
+                      </Grid>
+                      <Grid item xs={3}>
+                        <StyledLink to="/projects">
+                          <Typography variant="h5">My projects</Typography>
+                        </StyledLink>
+                      </Grid>
+                      <Grid item xs={3} />
+                    </Grid>
+                  </div>
                 </Box>
             </div>
         );

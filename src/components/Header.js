@@ -32,10 +32,10 @@ class Header extends React.Component {
         return (
             <Box sx={{ flexGrow: 1 }}>
             <AppBar 
-              position="sticky" 
+              
               sx={{background: "#ffffff"}}
             >
-                <Toolbar>
+                <Toolbar sx={{position: 'sticky'}}>
                     <Typography 
                       variant="h5" 
                       component="div" 
@@ -96,6 +96,7 @@ class Header extends React.Component {
                     </Box>
                 </Drawer>
             </AppBar>
+            <Toolbar />
             </Box>
         );
     }

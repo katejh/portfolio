@@ -23,6 +23,8 @@ class HomePage extends React.Component {
             skills: props.skills
         }
 
+        this.scrollRef = React.createRef();
+
         // console.log(props.education);
 
         // console.log(this.props.data);
@@ -90,7 +92,11 @@ class HomePage extends React.Component {
                         </Grid>
                         <Grid item>
                           <div style={{marginBottom: 20}}>
-                            <ExpandMoreIcon fontSize="large"/>
+                            <IconButton
+                              onClick={() => this.scrollRef.current.scrollIntoView({behaviour: 'smooth', block: 'start'})}
+                            >
+                              <ExpandMoreIcon fontSize="large"/>
+                            </IconButton>
                           </div>
                         </Grid>
                     </Grid>
@@ -104,6 +110,7 @@ class HomePage extends React.Component {
                     alignContent: 'center', 
                     justifyContent: 'center'
                   }}
+                  ref={this.scrollRef}
                 >
                     <div style={{flexGrow: 1}}>
                         <div 
